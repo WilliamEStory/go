@@ -5,11 +5,16 @@ import (
 )
 
 type person struct {
-	fistName string
-	lastName string
+	firstName string
+	lastName  string
 }
 
 func main() {
-	alex := person{fistName: "Alex", lastName: "Anderson"}
+	var alex person
+
+	alex.firstName = "Alex"
+	alex.lastName = "Anderson"
+
 	fmt.Println(alex)
+	fmt.Printf("%+v", alex)
 }
